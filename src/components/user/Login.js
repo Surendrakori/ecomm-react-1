@@ -4,6 +4,7 @@ import { UserContext } from "../../App";
 import { FaEye, FaEyeSlash } from "react-icons/fa";
 import "./Login.css";
 import { useState } from "react";
+import signUp from ".components/signIn/signUp.js";
 export default function Login() {
   const { user, setuser } = useContext(UserContext);
   const [visible, setvisible] = useState(false);
@@ -31,7 +32,7 @@ export default function Login() {
         <br></br>
         <div>Forgot Password?</div>
         <br></br>
-        <div><button className="newAccBtn">Create new account</button></div>
+        <div><button className="newAccBtn" onClick={<signUp/>}>Create new account</button></div>
       </div>
     </div>
   );
