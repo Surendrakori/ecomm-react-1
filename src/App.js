@@ -6,7 +6,7 @@ import Cart from "./components/cart/Cart.js";
 import Navbar from "./components/navbar/Navbar.js";
 import Login from "./components/user/Login.js";
 import { AppContextProvider } from "./context/appContext.js";
-import Logout from "./components/user/Logout.js";
+// import Logout from "./components/user/Logout.js";
 import Footer from "./components/footer/Footer.js"
 
 export const UserContext = createContext(null);
